@@ -291,6 +291,7 @@ def main():
         results["amp"] = test_amp_mixed_precision(gpu_idx)
         results["memory_stress"] = test_memory_stress(gpu_idx)
         all_results[gpu_idx] = results
+        print(results)
 
     # 多卡联合测试（如果有 2 张及以上）
     multi_gpu_results = {}
